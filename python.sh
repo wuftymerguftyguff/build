@@ -17,7 +17,7 @@ export LD_LIBRARY_PATH=$PRE/lib:$LD_LIBRARY_PATH
 which python
 python -V
 python -c "import dbm"
-cd ..
-tar -cvzf $TRAVIS_BUILD_DIR/python.tgz $PRE/*
+tar -cvzf $TRAVIS_BUILD_DIR/python.tgz *
 ls -l $TRAVIS_BUILD_DIR/python.tgz
+tar -tvzf $TRAVIS_BUILD_DIR/python.tgz
 
