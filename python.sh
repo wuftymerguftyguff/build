@@ -4,7 +4,9 @@ git checkout 2.7
 sudo apt-get install libdb-dev
 mkdir built
 PRE=$(pwd)/built
-./configure --prefix=$PRE --with-pydebug --with-dbmliborder=bdb:gdbm --enable-shared --enable-ipv6
+CFFLAGS="--prefix=$PRE --enable-shared --with-ensurepip=no --enable-unicode=ucs4"
+MYFLAGS="--prefix=$PRE --with-pydebug --with-dbmliborder=bdb:gdbm --enable-shared --enable-ipv6"
+./configure $CFFLAGS
 make -s -j2
 make install
 cd built
