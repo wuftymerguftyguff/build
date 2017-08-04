@@ -19,4 +19,5 @@ python -V
 python -c "import dbm"
 cd ..
 tar -cvzf python.tgz $PRE/*
+ls -l python.tgz
 
