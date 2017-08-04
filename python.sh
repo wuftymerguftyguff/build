@@ -11,4 +11,4 @@ make install
 cd built
 ls -lrt
 cd bin
-./python -m dbd
+./python -c "import dbd" 
