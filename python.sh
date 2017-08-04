@@ -17,5 +17,6 @@ export LD_LIBRARY_PATH=$PRE/lib:$LD_LIBRARY_PATH
 which python
 python -V
 python -c "import dbm"
+cd ..
 tar -cvzf python.tgz $PRE/*
 
