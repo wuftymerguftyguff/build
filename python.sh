@@ -10,8 +10,8 @@ make install
 cd built
 ls -lrt
 cd bin
-export PATH=$PRE/built/bin:$PATH
-export LD_LIBRARY_PATH=$PRE/built/lib:$LD_LIBRARY_PATH
+export PATH=$PRE/bin:$PATH
+export LD_LIBRARY_PATH=$PRE/lib:$LD_LIBRARY_PATH
 which python
 python -V
 python -c "import dbm"
