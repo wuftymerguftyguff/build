@@ -10,4 +10,8 @@ make install
 cd built
 ls -lrt
 cd bin
-./python -c "import dbd" 
+export PATH=$PRE/built/bin:$PATH
+export LD_LIBRARY_PATH=$PRE/built/lib:$LD_LIBRARY_PATH
+which python
+python -V
+python -c "import bdb"
