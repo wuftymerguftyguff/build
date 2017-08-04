@@ -6,7 +6,6 @@ mkdir built
 PRE=$(pwd)/built
 ./configure --prefix=$PRE --with-pydebug --with-dbmliborder=bdb:gdbm --enable-shared --enable-ipv6
 make -s -j2
-make test
 make install
 cd built
 ls -lrt
