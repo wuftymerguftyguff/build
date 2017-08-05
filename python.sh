@@ -34,9 +34,10 @@ sudo apt-get install libxml2
 sudo apt-get install libxml2-dev
 sudo apt-get install libxslt-dev
 sudo apt-get install openssl
-cd xmlsec
 PRE=$(pwd)/xmlsec-built
 CFFLAGS="--prefix=$PRE"
+cd xmlsec
+git checkout master
 ./configure $CFFLAGS
 make
 make install
