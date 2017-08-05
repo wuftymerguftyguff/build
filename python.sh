@@ -39,8 +39,12 @@ cd xmlsec
 git checkout master
 find . -name ".git" | xargs rm -r
 ./autogen.sh $CFFLAGS
-make tar-release
-cp xmlse*.tar.gz /home/travis/build/wuftymerguftyguff/build/xmlsec.tar.gz
+make 
+make install
+cd xmlsec-built
+tar -cvzf $TRAVIS_BUILD_DIR/xmlsec.tar.gz *
+ls -l $TRAVIS_BUILD_DIR/xmlsec.tar.gz
+tar -tvzf $TRAVIS_BUILD_DIR/xmlsec.tar.gz
 
 echo Python
 md5sum $TRAVIS_BUILD_DIR/python.tgz
