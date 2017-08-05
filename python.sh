@@ -39,7 +39,8 @@ CFFLAGS="--prefix=$PRE --sysconfdir=/etc"
 cd xmlsec
 git checkout master
 find . -name ".git" | xargs rm -r
-
+tar_file=xmlsec.tar.gz
 ./autogen.sh $CFFLAGS
 make tar-release
+cp $tar_file /home/travis/build/wuftymerguftyguff/build
 
