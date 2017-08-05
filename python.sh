@@ -26,3 +26,16 @@ ls -l $TRAVIS_BUILD_DIR/python.tgz
 tar -tvzf $TRAVIS_BUILD_DIR/python.tgz
 md5 $TRAVIS_BUILD_DIR/python.tgz
 
+cd ..
+pwd
+mkdir xmlsec-built
+sudo apt-get install libxml2
+sudo apt-get install libxslt
+sudo apt-get install openssl
+cd xmlsec
+PRE=$(pwd)/xmlsec-built
+CFFLAGS="--prefix=$PRE"
+./configure $CFFLAGS
+make
+make install
+
