@@ -1,4 +1,7 @@
+pwd
 git clone https://github.com/python/cpython.git
+git clone https://github.com/lsh123/xmlsec.git
+
 cd cpython
 git checkout 2.7
 sudo apt-get install libdb-dev
