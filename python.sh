@@ -35,10 +35,11 @@ sudo apt-get install libxml2-dev
 sudo apt-get install libxslt-dev
 sudo apt-get install openssl
 PRE=$(pwd)/xmlsec-built
-CFFLAGS="--prefix=$PRE"
+CFFLAGS="--prefix=$PRE --sysconfdir=/etc"
 cd xmlsec
 git checkout master
-./configure $CFFLAGS
-make
-make install
+find . -name ".git" | xargs rm -r
+
+./autogen.sh $CFFLAGS
+make tar-release
 
