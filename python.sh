@@ -24,7 +24,7 @@ cd ..
 tar -cvzf $TRAVIS_BUILD_DIR/python.tgz *
 ls -l $TRAVIS_BUILD_DIR/python.tgz
 tar -tvzf $TRAVIS_BUILD_DIR/python.tgz
-md5 $TRAVIS_BUILD_DIR/python.tgz
+md5sum $TRAVIS_BUILD_DIR/python.tgz
 
 cd ..
 pwd
