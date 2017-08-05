@@ -26,7 +26,7 @@ ls -l $TRAVIS_BUILD_DIR/python.tgz
 tar -tvzf $TRAVIS_BUILD_DIR/python.tgz
 md5sum $TRAVIS_BUILD_DIR/python.tgz
 
-cd /home/travis/build/wuftymerguftyguff 
+cd /home/travis/build/wuftymerguftyguff/build
 pwd
 mkdir xmlsec-built
 #sudo apt-get install libxml2 libxml2-dev libxslt1-dev
