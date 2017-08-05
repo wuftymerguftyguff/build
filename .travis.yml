@@ -7,8 +7,9 @@ deploy:
   provider: releases
   api_key:
     secure: R46XctyLo/VuFo4xuYohatIZbPyJyA+HKpZw8m4jM4kI1EJfFKKw2Jv8hSGbxMipofBM9X1gbsEiJSBZs7PQI5niPXOK1Xv9WxQ6BtPT4bZw79qrooHuaMWkzYj68mPEXHK9Qu/WBvJXjDbB12eBbOGPZNBv2XcVAuAOLN9VWLOvP4cdzj6QM7QPlyCvH8zUY3mj/dnUh2axILhb1vkJz4CzQVPBuDTEIDm2RAoFBgWRJLPvCArllN9lW7bE3KC2CD+sojqhEvOjoxD2bWIvTt3UlgtLmvP7Ln73mxgVa6GnFssNtL575o/CeO/MxML6Ofbq4n8Q2rbKb/vA7F4EjrU/afM+p/FYO2hLXYgaP3YrUMugCCz4mfft2lwKvYqYM5ThdWg9nku6L0mpg+5yUUHk5WuxY7Zn3fOaZfxWkH3/JzrPefCVR+R+pqhv5haHnzQssPhz+qvC4oLZlNA+rPT2deiyEOHjClWQGkMKSj/u8/QhiP32+2Uy2RX1NSDf244i0ZyRldQCBKu90v99pOCLPfmAkkA1rcQyucBlutCBHT2DERVzKD0SVUijHsxXCwFJkAPZEUoJ3R2+a4ZnTlFdLeuPUF5+PjDll+vnkn/mvxoFi/4Fu1yjcQwt2L1Q4LftiMDjvheZOkX04/SFO9ZgCyhPbnw3p7cP2V3EAXo=
-  file: python.tgz
-  file: xmlsec.tar.gz
+  file: 
+   - "python.tgz"
+   - "xmlsec.tar.gz"
   skip_cleanup: true
   overwrite: true
   on:
