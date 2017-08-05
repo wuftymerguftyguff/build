@@ -41,7 +41,7 @@ find . -name ".git" | xargs rm -r
 ./autogen.sh $CFFLAGS
 make 
 make install
-cd xmlsec-built
+cd $PRE
 tar -cvzf $TRAVIS_BUILD_DIR/xmlsec.tar.gz *
 ls -l $TRAVIS_BUILD_DIR/xmlsec.tar.gz
 tar -tvzf $TRAVIS_BUILD_DIR/xmlsec.tar.gz
